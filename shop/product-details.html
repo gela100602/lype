@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LYPE - Product Details</title>
+    <meta name="title" content="Lype.co - Spring summer collection" />
+
+    <link rel="stylesheet" href="../assets/css/category-style.css" />
+    <link rel="stylesheet" href="../assets/fonts/font.css" />
+
+    <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="../assets/images/logo.png"
+            width="127"
+            height="30"
+            alt="lype shop"
+          />
+        </a>
+
+        <!-- Navigation Menu -->
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="../index.html" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="../shop/shop.html" class="navbar-link">Shop</a>
+            </li>
+
+            <li>
+              <div class="dropdown">
+                <button class="dropdown-btn">Categories</button>
+                <div class="dropdown-content">
+                  <a href="../categories/tops.html">Tops</a>
+                  <a href="../categories/bottoms.html">Bottoms</a>
+                  <a href="../categories/footwear.html">Footwear</a>
+                  <a href="../categories/outerwear.html">Outerwear</a>
+                  <a href="../categories/accessories.html">Accessories</a>
+                  <a href="../categories/others.html">Others</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Cart and Favorites Buttons -->
+          <a href="cart.html" class="cart-btn">
+            <ion-icon name="bag" aria-hidden="true"></ion-icon>
+            <span class="span cart">Cart (04)</span>
+          </a>
+
+          <a href="#" class="fav-btn">
+            <ion-icon name="heart" aria-hidden="true"></ion-icon>
+            <span class="span fav">Favorites (02)</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 
+    - #PRODUCT DETAILS
+  -->
+
+  <section class="p-detail-section">
+    <div class="p-container">
+        <div class="image-container">
+            <img src="../assets/images/product-1.png" alt="Product Image" id="zoom" class="product-image">
+        </div>
+        <div class="details-container">
+
+            <h1 class="p-title">Patagonia Ski Jacket</h1>
+            <p class="p-category">Category: Outerwear</p>
+            <p class="p-price">₱3,000.00</p>
+
+            <form class="p-options">
+                <label for="size">Size:</label>
+                <select id="size" name="size">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">Extra Large</option>
+                </select>
+            </form>
+
+            <div class="quantity">
+                <label for="quantity-input">Quantity:</label>
+                <input type="number" id="quantity-input" name="quantity" value="1" min="1">
+            </div>
+
+            <button class="btn btn-secondary">Add to Cart</button>
+
+            <h2 class="p-description-title">Description</h2>
+            <p class="p-description">
+              A high-performance outerwear piece designed for
+              serious skiers and snowboarders. It features a durable, abrasion-resistant
+              shell with a DWR (durable water repellent) finish that provides exceptional
+              protection against snow and rain.
+            </p>
+        </div>      
+    </div>
+</section>
+
+<hr>
+
+<section class="rp-section">
+  <div class="rp-container">
+    <h2 class="rp-title">
+      Related Products
+      <a href="../categories/outerwear.html" class="see-more-btn">See More</a>
+    </h2>
+    
+    <ul class="feature-list" data-feature-list> 
+
+      <li>
+        <div class="product-card text-center">
+          <div class="card-banner">
+            <figure
+              class="product-banner img-holder"
+              style="--width: 448; --height: 470"
+            >
+              <img
+                src="../assets/images/product-4.png"
+                width="448"
+                height="470"
+                loading="lazy"
+                alt="1966 Whitesville Varsity Jacket x Looney Tunes"
+                class="img-cover"
+              />
+            </figure>
+
+            <div class="btn-group">
+              <a href="#" class="product-btn" style="margin-bottom: 15px">
+                <ion-icon name="bag" aria-hidden="true"></ion-icon>
+                <span class="span">Add To Cart</span>
+              </a>
+              <a href="#" class="product-btn">
+                <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                <span class="span">Add To Favorites</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h3 class="h3 title">
+              <a href="#" class="card-title"
+                >1966 Whitesville Varsity Jacket x Looney Tunes</a
+              >
+            </h3>
+            <span class="price">₱17,800.00</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="product-card text-center">
+          <div class="card-banner">
+            <figure
+              class="product-banner img-holder"
+              style="--width: 448; --height: 470"
+            >
+              <img
+                src="../assets/images/categories/outerwear/outerwear1.PNG"
+                width="448"
+                height="470"
+                loading="lazy"
+                alt="Tailor Tokyo Embroidered Sukajan"
+                class="img-cover"
+              />
+            </figure>
+
+            <div class="btn-group">
+              <a href="#" class="product-btn" style="margin-bottom: 15px">
+                <ion-icon name="bag" aria-hidden="true"></ion-icon>
+                <span class="span">Add To Cart</span>
+              </a>
+              <a href="#" class="product-btn">
+                <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                <span class="span">Add To Favorites</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h3 class="h3 title">
+              <a href="#" class="card-title"
+                >Tailor Tokyo Embroidered Sukajan</a
+              >
+            </h3>
+            <span class="price">₱1,899.00</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="product-card text-center">
+          <div class="card-banner">
+            <figure
+              class="product-banner img-holder"
+              style="--width: 448; --height: 470"
+            >
+              <img
+                src="../assets/images/categories/outerwear/outerwear2.PNG"
+                width="448"
+                height="470"
+                loading="lazy"
+                alt="Balenciaga Hoodie"
+                class="img-cover"
+              />
+            </figure>
+
+            <div class="btn-group">
+              <a href="#" class="product-btn" style="margin-bottom: 15px">
+                <ion-icon name="bag" aria-hidden="true"></ion-icon>
+                <span class="span">Add To Cart</span>
+              </a>
+              <a href="#" class="product-btn">
+                <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                <span class="span">Add To Favorites</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h3 class="h3 title">
+              <a href="#" class="card-title"
+                >Balenciaga Hoodie</a
+              >
+            </h3>
+            <span class="price">₱3,999.00</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img
+                src="../assets/images/logo.png"
+                width="120"
+                height="30"
+                loading="lazy"
+                alt="lype home"
+              />
+            </a>
+
+            <p class="footer-text">
+              Lype.co is a company that delivers high quality & valued products
+              to customers from Clothing, Toys, Antiques, Vintage Items, War
+              Memorabilia, etc.
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100059595626859"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/lype.co/"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.linkedin.com/school/filamer-christian-university-roxas-avenue-roxas-city-capiz/"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title title">Contact info</p>
+
+              <address class="footer-text">
+                Roxas City, Capiz 5800
+                <br />
+                Philippines
+              </address>
+            </li>
+
+            <li>
+              <a href="mailto:info.lype@co.com" class="email"
+                >info.lype@co.com</a
+              >
+            </li>
+
+            <li>
+              <a href="tel:+00 123 456 789" class="call">+00 123 456 789</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title title">Subscribe newsletter</p>
+
+            <input
+              type="email"
+              name="email_address"
+              placeholder="Enter your email address"
+              required
+              autocomplete="off"
+              class="input-field"
+            />
+
+            <button class="btn btn-secondary">Subscribe</button>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="wrapper">
+            <div class="link-wrapper">
+              <a href="../footer/team.html" class="footer-bottom-link">Our Team</a>
+              <a href="../footer/services.html" class="footer-bottom-link">Services</a>
+              <a href="../footer/learn-more.html" class="footer-bottom-link">Learn More</a>
+            </div>
+
+            <div class="link-wrapper">
+              <a href="../footer/terms-conditions.html" class="footer-bottom-link">Terms & Conditions</a>
+
+              <a href="../footer/privacy-policy.html" class="footer-bottom-link">Privacy Policy</a>
+            </div>
+          </div>
+
+          <p class="copyright">&copy; 2024 lypeco, All Rights Reserved</p>
+        </div>
+
+        <img
+          src="../assets/images/footer-shape-1.png"
+          width="245"
+          height="165"
+          loading="lazy"
+          alt="shape"
+          class="shape shape-1"
+        />
+
+        <img
+          src="../assets/images/footer-shape-2.png"
+          width="138"
+          height="316"
+          loading="lazy"
+          alt="shape"
+          class="shape shape-2"
+        />
+
+        <img
+          src="../assets/images/footer-shape-3.png"
+          width="346"
+          height="92"
+          loading="lazy"
+          alt="shape"
+          class="shape shape-3"
+        />
+      </div>
+    </footer>
+
+    <!-- js links -->
+    <script src="../assets/js/script.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6"
+      crossorigin="anonymous"
+    ></script>
+    
+    <!-- zoom function -->
+    <script src="../assets/js/zoomsl.min.js"></script>
+
+    <script>
+      $(function () {
+        console.log("hello");
+        $("#zoom").imagezoomsl({
+          zoomrange: [4, 4],
+        });
+      });
+    </script>
+
+    <!-- ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
